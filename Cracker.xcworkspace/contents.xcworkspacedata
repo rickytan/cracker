@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Kobold2D/Kobold2D-1.0/__Kobold2D__/Kobold2D-Libraries.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cracker/Cracker.xcodeproj">
+   </FileRef>
+</Workspace>

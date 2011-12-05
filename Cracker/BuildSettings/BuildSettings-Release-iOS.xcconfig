@@ -1,0 +1,23 @@
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+// Provide path to all folders with header files that are in use
+// Why so verbose? Because using recursive paths /** together with /../ breaks code sense :(
+// See: http://stackoverflow.com/questions/5288697/code-loses-syntax-color-in-xcode-4
+
+#include "HeaderSearchPaths.xcconfig"
+#include "Common-Release.xcconfig"
+#include "Common-iOS.xcconfig"
+
+#include "BuildSettings-iOS.xcconfig"
