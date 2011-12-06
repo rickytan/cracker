@@ -7,6 +7,7 @@
 //
 
 #import "CCScene.h"
+#import "Box2D.h"
 
 @interface GameScene : CCScene
 

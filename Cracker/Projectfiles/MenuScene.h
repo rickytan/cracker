@@ -10,7 +10,7 @@
 
 
 @interface MenuScene : CCScene {
-    CCMenu *                menu;
+
 }
 
 @end

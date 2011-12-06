@@ -7,20 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8134B5B4148CB59500ED1800 /* libbox2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AA148CB59500ED1800 /* libbox2d-ios.a */; };
-		8134B5B5148CB59500ED1800 /* libchipmunk-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AB148CB59500ED1800 /* libchipmunk-ios.a */; };
-		8134B5B6148CB59500ED1800 /* libchipmunk-spacemanager-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AC148CB59500ED1800 /* libchipmunk-spacemanager-ios.a */; };
-		8134B5B7148CB59500ED1800 /* libcocos2d-extensions-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AD148CB59500ED1800 /* libcocos2d-extensions-ios.a */; };
-		8134B5B8148CB59500ED1800 /* libcocos2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AE148CB59500ED1800 /* libcocos2d-ios.a */; };
-		8134B5B9148CB59500ED1800 /* libcocos3d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5AF148CB59500ED1800 /* libcocos3d-ios.a */; };
-		8134B5BA148CB59500ED1800 /* libcocosdenshion-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5B0148CB59500ED1800 /* libcocosdenshion-ios.a */; };
-		8134B5BB148CB59500ED1800 /* libkobold2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5B1148CB59500ED1800 /* libkobold2d-ios.a */; };
-		8134B5BC148CB59500ED1800 /* libobjectal-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5B2148CB59500ED1800 /* libobjectal-ios.a */; };
-		8134B5BD148CB59500ED1800 /* libwax-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B5B3148CB59500ED1800 /* libwax-ios.a */; };
 		8134B5C7148CBB5200ED1800 /* MainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8134B5C6148CBB5200ED1800 /* MainMenu.mm */; };
 		8134B605148CBD8400ED1800 /* ConfigMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134B604148CBD8400ED1800 /* ConfigMenu.m */; };
-		8134B609148CC1AF00ED1800 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134B608148CC1AF00ED1800 /* GameScene.m */; };
-		8134B60B148CC36900ED1800 /* libsneakyinput-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8134B60A148CC36900ED1800 /* libsneakyinput-ios.a */; };
+		8134B609148CC1AF00ED1800 /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8134B608148CC1AF00ED1800 /* GameScene.mm */; };
 		8169824F148C9387003F774D /* b1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169823A148C9387003F774D /* b1-hd.png */; };
 		81698250148C9387003F774D /* b1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169823B148C9387003F774D /* b1.png */; };
 		81698251148C9387003F774D /* b2-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8169823C148C9387003F774D /* b2-hd.png */; };
@@ -51,7 +40,18 @@
 		8169B80F148CB156003F774D /* FrameworksAndLibraries.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B808148CB156003F774D /* FrameworksAndLibraries.xcconfig */; };
 		8169B810148CB156003F774D /* HeaderSearchPaths.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B809148CB156003F774D /* HeaderSearchPaths.xcconfig */; };
 		8169B812148CB237003F774D /* Common-iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B811148CB236003F774D /* Common-iOS.xcconfig */; };
-		81F0A995148C74FF008456F3 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F0A994148C74FF008456F3 /* MenuScene.m */; };
+		81E41110148DBC5D0052B953 /* libbox2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E410FD148DBC5B0052B953 /* libbox2d-ios.a */; };
+		81E41112148DBC5D0052B953 /* libchipmunk-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E410FF148DBC5B0052B953 /* libchipmunk-ios.a */; };
+		81E41114148DBC5D0052B953 /* libchipmunk-spacemanager-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41101148DBC5B0052B953 /* libchipmunk-spacemanager-ios.a */; };
+		81E41116148DBC5D0052B953 /* libcocos2d-extensions-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41103148DBC5C0052B953 /* libcocos2d-extensions-ios.a */; };
+		81E41118148DBC5D0052B953 /* libcocos2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41105148DBC5C0052B953 /* libcocos2d-ios.a */; };
+		81E4111A148DBC5D0052B953 /* libcocos3d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41107148DBC5C0052B953 /* libcocos3d-ios.a */; };
+		81E4111B148DBC5D0052B953 /* libcocosdenshion-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41108148DBC5C0052B953 /* libcocosdenshion-ios.a */; };
+		81E4111D148DBC5D0052B953 /* libkobold2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4110A148DBC5C0052B953 /* libkobold2d-ios.a */; };
+		81E4111F148DBC5D0052B953 /* libobjectal-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4110C148DBC5C0052B953 /* libobjectal-ios.a */; };
+		81E41120148DBC5D0052B953 /* libsneakyinput-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4110D148DBC5C0052B953 /* libsneakyinput-ios.a */; };
+		81E41121148DBC5D0052B953 /* libwax-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4110E148DBC5D0052B953 /* libwax-ios.a */; };
+		81F0A995148C74FF008456F3 /* MenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 81F0A994148C74FF008456F3 /* MenuScene.mm */; };
 		DC193EB813B692D100500B56 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC193EB313B6872600500B56 /* GLES-Render.mm */; };
 		DC193EBC13B6956F00500B56 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC193EBB13B6956F00500B56 /* ContactListener.mm */; };
 		DC193EC113B6969B00500B56 /* Author&License.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC193EBF13B6969B00500B56 /* Author&License.txt */; };
@@ -87,7 +87,7 @@
 		8134B603148CBD8400ED1800 /* ConfigMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigMenu.h; sourceTree = "<group>"; };
 		8134B604148CBD8400ED1800 /* ConfigMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigMenu.m; sourceTree = "<group>"; };
 		8134B607148CC1AF00ED1800 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		8134B608148CC1AF00ED1800 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		8134B608148CC1AF00ED1800 /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		8134B60A148CC36900ED1800 /* libsneakyinput-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsneakyinput-ios.a"; path = "../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libsneakyinput-ios.a"; sourceTree = "<group>"; };
 		8169823A148C9387003F774D /* b1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b1-hd.png"; sourceTree = "<group>"; };
 		8169823B148C9387003F774D /* b1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b1.png; sourceTree = "<group>"; };
@@ -119,8 +119,19 @@
 		8169B808148CB156003F774D /* FrameworksAndLibraries.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FrameworksAndLibraries.xcconfig; sourceTree = "<group>"; };
 		8169B809148CB156003F774D /* HeaderSearchPaths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HeaderSearchPaths.xcconfig; sourceTree = "<group>"; };
 		8169B811148CB236003F774D /* Common-iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Common-iOS.xcconfig"; sourceTree = "<group>"; };
+		81E410FD148DBC5B0052B953 /* libbox2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libbox2d-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libbox2d-ios.a"; sourceTree = "<group>"; };
+		81E410FF148DBC5B0052B953 /* libchipmunk-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libchipmunk-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libchipmunk-ios.a"; sourceTree = "<group>"; };
+		81E41101148DBC5B0052B953 /* libchipmunk-spacemanager-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libchipmunk-spacemanager-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libchipmunk-spacemanager-ios.a"; sourceTree = "<group>"; };
+		81E41103148DBC5C0052B953 /* libcocos2d-extensions-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d-extensions-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libcocos2d-extensions-ios.a"; sourceTree = "<group>"; };
+		81E41105148DBC5C0052B953 /* libcocos2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libcocos2d-ios.a"; sourceTree = "<group>"; };
+		81E41107148DBC5C0052B953 /* libcocos3d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos3d-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libcocos3d-ios.a"; sourceTree = "<group>"; };
+		81E41108148DBC5C0052B953 /* libcocosdenshion-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocosdenshion-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libcocosdenshion-ios.a"; sourceTree = "<group>"; };
+		81E4110A148DBC5C0052B953 /* libkobold2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libkobold2d-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libkobold2d-ios.a"; sourceTree = "<group>"; };
+		81E4110C148DBC5C0052B953 /* libobjectal-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libobjectal-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libobjectal-ios.a"; sourceTree = "<group>"; };
+		81E4110D148DBC5C0052B953 /* libsneakyinput-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsneakyinput-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libsneakyinput-ios.a"; sourceTree = "<group>"; };
+		81E4110E148DBC5D0052B953 /* libwax-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwax-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libwax-ios.a"; sourceTree = "<group>"; };
 		81F0A993148C74FF008456F3 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
-		81F0A994148C74FF008456F3 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		81F0A994148C74FF008456F3 /* MenuScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuScene.mm; sourceTree = "<group>"; };
 		DC193EB213B6872600500B56 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		DC193EB313B6872600500B56 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		DC193EBA13B6956F00500B56 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
@@ -155,17 +166,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8134B60B148CC36900ED1800 /* libsneakyinput-ios.a in Frameworks */,
-				8134B5B4148CB59500ED1800 /* libbox2d-ios.a in Frameworks */,
-				8134B5B5148CB59500ED1800 /* libchipmunk-ios.a in Frameworks */,
-				8134B5B6148CB59500ED1800 /* libchipmunk-spacemanager-ios.a in Frameworks */,
-				8134B5B7148CB59500ED1800 /* libcocos2d-extensions-ios.a in Frameworks */,
-				8134B5B8148CB59500ED1800 /* libcocos2d-ios.a in Frameworks */,
-				8134B5B9148CB59500ED1800 /* libcocos3d-ios.a in Frameworks */,
-				8134B5BA148CB59500ED1800 /* libcocosdenshion-ios.a in Frameworks */,
-				8134B5BB148CB59500ED1800 /* libkobold2d-ios.a in Frameworks */,
-				8134B5BC148CB59500ED1800 /* libobjectal-ios.a in Frameworks */,
-				8134B5BD148CB59500ED1800 /* libwax-ios.a in Frameworks */,
+				81E41110148DBC5D0052B953 /* libbox2d-ios.a in Frameworks */,
+				81E41112148DBC5D0052B953 /* libchipmunk-ios.a in Frameworks */,
+				81E41114148DBC5D0052B953 /* libchipmunk-spacemanager-ios.a in Frameworks */,
+				81E41116148DBC5D0052B953 /* libcocos2d-extensions-ios.a in Frameworks */,
+				81E41118148DBC5D0052B953 /* libcocos2d-ios.a in Frameworks */,
+				81E4111A148DBC5D0052B953 /* libcocos3d-ios.a in Frameworks */,
+				81E4111B148DBC5D0052B953 /* libcocosdenshion-ios.a in Frameworks */,
+				81E4111D148DBC5D0052B953 /* libkobold2d-ios.a in Frameworks */,
+				81E4111F148DBC5D0052B953 /* libobjectal-ios.a in Frameworks */,
+				81E41120148DBC5D0052B953 /* libsneakyinput-ios.a in Frameworks */,
+				81E41121148DBC5D0052B953 /* libwax-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				81F0A993148C74FF008456F3 /* MenuScene.h */,
-				81F0A994148C74FF008456F3 /* MenuScene.m */,
+				81F0A994148C74FF008456F3 /* MenuScene.mm */,
 				8134B5C5148CBB5200ED1800 /* MainMenu.h */,
 				8134B5C6148CBB5200ED1800 /* MainMenu.mm */,
 				8134B603148CBD8400ED1800 /* ConfigMenu.h */,
@@ -189,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8134B607148CC1AF00ED1800 /* GameScene.h */,
-				8134B608148CC1AF00ED1800 /* GameScene.m */,
+				8134B608148CC1AF00ED1800 /* GameScene.mm */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -262,6 +273,17 @@
 		DCC1A0E613A94ED5005BD75D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81E410FD148DBC5B0052B953 /* libbox2d-ios.a */,
+				81E410FF148DBC5B0052B953 /* libchipmunk-ios.a */,
+				81E41101148DBC5B0052B953 /* libchipmunk-spacemanager-ios.a */,
+				81E41103148DBC5C0052B953 /* libcocos2d-extensions-ios.a */,
+				81E41105148DBC5C0052B953 /* libcocos2d-ios.a */,
+				81E41107148DBC5C0052B953 /* libcocos3d-ios.a */,
+				81E41108148DBC5C0052B953 /* libcocosdenshion-ios.a */,
+				81E4110A148DBC5C0052B953 /* libkobold2d-ios.a */,
+				81E4110C148DBC5C0052B953 /* libobjectal-ios.a */,
+				81E4110D148DBC5C0052B953 /* libsneakyinput-ios.a */,
+				81E4110E148DBC5D0052B953 /* libwax-ios.a */,
 				8134B5AA148CB59500ED1800 /* libbox2d-ios.a */,
 				8134B60A148CC36900ED1800 /* libsneakyinput-ios.a */,
 				8134B5AB148CB59500ED1800 /* libchipmunk-ios.a */,
@@ -468,10 +490,10 @@
 				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
 				DC193EB813B692D100500B56 /* GLES-Render.mm in Sources */,
 				DC193EBC13B6956F00500B56 /* ContactListener.mm in Sources */,
-				81F0A995148C74FF008456F3 /* MenuScene.m in Sources */,
+				81F0A995148C74FF008456F3 /* MenuScene.mm in Sources */,
 				8134B5C7148CBB5200ED1800 /* MainMenu.mm in Sources */,
 				8134B605148CBD8400ED1800 /* ConfigMenu.m in Sources */,
-				8134B609148CC1AF00ED1800 /* GameScene.m in Sources */,
+				8134B609148CC1AF00ED1800 /* GameScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,9 +506,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yiqun Ding (8VGDSV7AWS)";
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACH_O_TYPE = mh_execute;
 				PROVISIONING_PROFILE = "6B606B41-8E14-439F-8E71-2D9FCEAE0142";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 			};
 			name = Debug;
 		};
@@ -496,9 +521,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yiqun Ding (8VGDSV7AWS)";
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACH_O_TYPE = mh_execute;
 				PROVISIONING_PROFILE = "6B606B41-8E14-439F-8E71-2D9FCEAE0142";
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos5.0;
 			};
 			name = Release;
 		};
@@ -508,13 +536,14 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yiqun Ding (8VGDSV7AWS)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(HOME)/Kobold2D/Kobold2D-1.0/__Kobold2D__/libs",
-					"$(inherited)",
-				);
+				COPY_PHASE_STRIP = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Cracker;
 				PROVISIONING_PROFILE = "6B606B41-8E14-439F-8E71-2D9FCEAE0142";
+				SDKROOT = iphoneos5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -524,13 +553,13 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Yiqun Ding (8VGDSV7AWS)";
-				LIBRARY_SEARCH_PATHS = (
-					"$(HOME)/Kobold2D/Kobold2D-1.0/__Kobold2D__/libs",
-					"$(inherited)",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = Cracker;
 				PROVISIONING_PROFILE = "6B606B41-8E14-439F-8E71-2D9FCEAE0142";
+				SDKROOT = iphoneos5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};

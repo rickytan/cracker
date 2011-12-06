@@ -42,11 +42,11 @@ local config =
 		EnableStatusBar = NO,
 
 		-- Orientation & Autorotation
-		DeviceOrientation = DeviceOrientation.LandscapeLeft,
-		AutorotationType = Autorotation.CCDirector,
-		ShouldAutorotateToLandscapeOrientations = YES,
-		ShouldAutorotateToPortraitOrientations = NO,
-		AllowAutorotateOnFirstAndSecondGenerationDevices = YES,
+		DeviceOrientation = DeviceOrientation.Portrait,
+		AutorotationType = Autorotation.None,
+		ShouldAutorotateToLandscapeOrientations = NO,
+		ShouldAutorotateToPortraitOrientations = YES,
+		AllowAutorotateOnFirstAndSecondGenerationDevices = NO,
 	
 		-- iAd setup
 		EnableAdBanner = NO,
