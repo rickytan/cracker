@@ -33,6 +33,7 @@ const int TILESET_ROWS = 19;
 {
     [super dealloc];
     delete world;
+    delete debugDraw;
 }
 - (id)init
 {
@@ -263,10 +264,9 @@ const int TILESET_ROWS = 19;
 	// Usually for games only 1 position iteration is necessary to achieve good results.
     if (!worldStatic){
         
-        float timeStep = 0.03f;
         int32 velocityIterations = 2;
         int32 positionIterations = 1;
-        world->Step(timeStep, velocityIterations, positionIterations);
+        world->Step(delta, velocityIterations, positionIterations);
         
         // for each body, get its assigned sprite and update the sprite's position
         for (b2Body* body = world->GetBodyList(); body != nil; body = body->GetNext())

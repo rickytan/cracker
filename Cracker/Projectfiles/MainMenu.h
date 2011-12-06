@@ -14,9 +14,9 @@
 @interface MainMenu : CCLayer {
     b2World *                   world;
     BOOL                        worldStatic;
-    CCMenu *                    menu;   // Weak assign
+    CCMenu *                    menu;           // Weak assign
   	GLESDebugDraw *             debugDraw;
-    CCMenuItem *                disabledItem;
+    CCMenuItem *                disabledItem;   // Weak assign
 }
 - (id)init;
 

@@ -40,6 +40,8 @@
 		8169B80F148CB156003F774D /* FrameworksAndLibraries.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B808148CB156003F774D /* FrameworksAndLibraries.xcconfig */; };
 		8169B810148CB156003F774D /* HeaderSearchPaths.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B809148CB156003F774D /* HeaderSearchPaths.xcconfig */; };
 		8169B812148CB237003F774D /* Common-iOS.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8169B811148CB236003F774D /* Common-iOS.xcconfig */; };
+		81B603D6148E186A000FB532 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 81B603D5148E1869000FB532 /* ball.png */; };
+		81B603DB148E1922000FB532 /* PlayLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 81B603DA148E1922000FB532 /* PlayLayer.mm */; };
 		81E41110148DBC5D0052B953 /* libbox2d-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E410FD148DBC5B0052B953 /* libbox2d-ios.a */; };
 		81E41112148DBC5D0052B953 /* libchipmunk-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E410FF148DBC5B0052B953 /* libchipmunk-ios.a */; };
 		81E41114148DBC5D0052B953 /* libchipmunk-spacemanager-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E41101148DBC5B0052B953 /* libchipmunk-spacemanager-ios.a */; };
@@ -119,6 +121,9 @@
 		8169B808148CB156003F774D /* FrameworksAndLibraries.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FrameworksAndLibraries.xcconfig; sourceTree = "<group>"; };
 		8169B809148CB156003F774D /* HeaderSearchPaths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HeaderSearchPaths.xcconfig; sourceTree = "<group>"; };
 		8169B811148CB236003F774D /* Common-iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Common-iOS.xcconfig"; sourceTree = "<group>"; };
+		81B603D5148E1869000FB532 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		81B603D7148E18B0000FB532 /* PlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayLayer.h; sourceTree = "<group>"; };
+		81B603DA148E1922000FB532 /* PlayLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PlayLayer.mm; sourceTree = "<group>"; };
 		81E410FD148DBC5B0052B953 /* libbox2d-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libbox2d-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libbox2d-ios.a"; sourceTree = "<group>"; };
 		81E410FF148DBC5B0052B953 /* libchipmunk-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libchipmunk-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libchipmunk-ios.a"; sourceTree = "<group>"; };
 		81E41101148DBC5B0052B953 /* libchipmunk-spacemanager-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libchipmunk-spacemanager-ios.a"; path = "../../../Kobold2D/Kobold2D-1.0/__Kobold2D__/build/Release-iphoneos/libchipmunk-spacemanager-ios.a"; sourceTree = "<group>"; };
@@ -201,6 +206,8 @@
 			children = (
 				8134B607148CC1AF00ED1800 /* GameScene.h */,
 				8134B608148CC1AF00ED1800 /* GameScene.mm */,
+				81B603D7148E18B0000FB532 /* PlayLayer.h */,
+				81B603DA148E1922000FB532 /* PlayLayer.mm */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -208,25 +215,15 @@
 		81698237148C92EE003F774D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8169823A148C9387003F774D /* b1-hd.png */,
-				8169823B148C9387003F774D /* b1.png */,
-				8169823C148C9387003F774D /* b2-hd.png */,
-				8169823D148C9387003F774D /* b2.png */,
+				81B603D5148E1869000FB532 /* ball.png */,
+				81B603D4148E180B000FB532 /* Arrows */,
 				8169823E148C9387003F774D /* btn-about-normal.png */,
 				8169823F148C9387003F774D /* btn-about-selected.png */,
 				81698240148C9387003F774D /* btn-highscores-normal.png */,
 				81698241148C9387003F774D /* btn-highscores-selected.png */,
 				81698242148C9387003F774D /* btn-play-normal.png */,
 				81698243148C9387003F774D /* btn-play-selected.png */,
-				81698244148C9387003F774D /* f1-hd.png */,
-				81698245148C9387003F774D /* f1.png */,
-				81698246148C9387003F774D /* f2-hd.png */,
-				81698247148C9387003F774D /* f2.png */,
 				81698248148C9387003F774D /* menuitemsprite.png */,
-				81698249148C9387003F774D /* r1-hd.png */,
-				8169824A148C9387003F774D /* r1.png */,
-				8169824B148C9387003F774D /* r2-hd.png */,
-				8169824C148C9387003F774D /* r2.png */,
 				8169824D148C9387003F774D /* SendScoreButton.png */,
 				8169824E148C9387003F774D /* SendScoreButtonPressed.png */,
 			);
@@ -240,6 +237,25 @@
 			);
 			name = Sounds;
 			path = Resources/Sounds;
+			sourceTree = "<group>";
+		};
+		81B603D4148E180B000FB532 /* Arrows */ = {
+			isa = PBXGroup;
+			children = (
+				8169823A148C9387003F774D /* b1-hd.png */,
+				81698244148C9387003F774D /* f1-hd.png */,
+				81698245148C9387003F774D /* f1.png */,
+				81698246148C9387003F774D /* f2-hd.png */,
+				81698247148C9387003F774D /* f2.png */,
+				8169823B148C9387003F774D /* b1.png */,
+				81698249148C9387003F774D /* r1-hd.png */,
+				8169824A148C9387003F774D /* r1.png */,
+				8169824B148C9387003F774D /* r2-hd.png */,
+				8169824C148C9387003F774D /* r2.png */,
+				8169823C148C9387003F774D /* b2-hd.png */,
+				8169823D148C9387003F774D /* b2.png */,
+			);
+			name = Arrows;
 			sourceTree = "<group>";
 		};
 		DC193EBE13B6969B00500B56 /* David Gervais Tilesets */ = {
@@ -475,6 +491,7 @@
 				8169B80F148CB156003F774D /* FrameworksAndLibraries.xcconfig in Resources */,
 				8169B810148CB156003F774D /* HeaderSearchPaths.xcconfig in Resources */,
 				8169B812148CB237003F774D /* Common-iOS.xcconfig in Resources */,
+				81B603D6148E186A000FB532 /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +511,7 @@
 				8134B5C7148CBB5200ED1800 /* MainMenu.mm in Sources */,
 				8134B605148CBD8400ED1800 /* ConfigMenu.m in Sources */,
 				8134B609148CC1AF00ED1800 /* GameScene.mm in Sources */,
+				81B603DB148E1922000FB532 /* PlayLayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
