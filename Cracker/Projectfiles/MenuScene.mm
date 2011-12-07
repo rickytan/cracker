@@ -8,6 +8,7 @@
 
 #import "MenuScene.h"
 #import "MainMenu.h"
+#import "ConfigMenu.h"
 
 
 @implementation MenuScene
@@ -22,7 +23,10 @@
     if ((self = [super init])){
         glClearColor(.0f, .0f, .0f, .0f);
         
-        CCLayerMultiplex *layer = [CCLayerMultiplex layerWithLayers: [MainMenu node], nil];
+        CCLayerMultiplex *layer = [CCLayerMultiplex layerWithLayers: 
+                                   [MainMenu node], 
+                                   [ConfigMenu node], 
+                                   nil];
         
         [self addChild:layer];
     }

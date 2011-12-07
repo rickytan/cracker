@@ -11,6 +11,7 @@
 
 @interface PlayLayer : CCLayer {
     b2World *               world;
+    CCSprite *              ball;       // Weak assign
 }
 
 @end

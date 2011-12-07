@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "MenuScene.h"
+#import "PlayLayer.h"
 
 @implementation GameScene
 
@@ -20,9 +21,8 @@
 - (id)init
 {
     if ((self = [super init])){
-        glClearColor(1.0, 1.0, 1.0, 1.0);
-        
-        
+
+        [self addChild:[PlayLayer node]];
         [self scheduleUpdate];
     }
     return self;
