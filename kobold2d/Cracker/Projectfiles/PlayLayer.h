@@ -8,10 +8,16 @@
 
 #import "CCLayer.h"
 #import "Box2D.h"
+#import "CC3Node.h"
+#import "Ball3DLayer.h"
 
 @interface PlayLayer : CCLayer {
     b2World *               world;
-    CCSprite *              ball;       // Weak assign
+
+    Ball3DLayer *           ball3DLayer;// Weak assign
+    NSTimer *               timer;
+    
+    uint                    score;
 }
 
 @end

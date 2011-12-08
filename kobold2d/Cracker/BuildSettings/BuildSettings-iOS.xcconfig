@@ -5,7 +5,14 @@
 // Released under MIT License in Germany (LICENSE-Kobold2D.txt).
 //
 
-#include "../__Kobold2D__/buildsettings/FrameworksAndLibraries.xcconfig"
+//
+// Kobold2D™ --- http://www.kobold2d.org
+//
+// Copyright (c) 2010-2011 Steffen Itterheim. 
+// Released under MIT License in Germany (LICENSE-Kobold2D.txt).
+//
+
+#include "FrameworksAndLibraries.xcconfig"
 
 // ***************************************
 // Actual compiler settings filled in here
@@ -36,4 +43,4 @@ GCC_TREAT_WARNINGS_AS_ERRORS = NO
 // How does ARC work? http://stackoverflow.com/questions/6385212/how-does-the-new-automatic-reference-counting-mechanism-work
 // Transitioning to ARC: http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/_index.html
 // ARC is available on iOS 4 or newer, Mac OS X 10.6 (32-Bit & 64-Bit) and Mac OS X 10.7 (64-Bit only)
-CLANG_ENABLE_OBJC_ARC = YES
+CLANG_ENABLE_OBJC_ARC = NO

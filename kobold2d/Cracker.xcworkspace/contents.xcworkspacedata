@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Cracker/Cracker.xcodeproj">
+      location = "group:../../Kobold2D/Kobold2D-1.0/__Kobold2D__/Kobold2D-Libraries.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:__Kobold2D__/Kobold2D-Libraries.xcodeproj">
+      location = "group:Cracker/Cracker.xcodeproj">
    </FileRef>
 </Workspace>

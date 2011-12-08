@@ -9,7 +9,7 @@
 #import "MainMenu.h"
 #import "GameScene.h"
 
-const float PTM_RATIO = 50.0f;
+const float PTM_RATIO = 96.0f;
 
 @interface MainMenu (PrivateMethods)
 
@@ -26,7 +26,9 @@ const float PTM_RATIO = 50.0f;
 
 - (void)dealloc
 {
-    //[super dealloc];
+#ifndef KK_ARC
+    [super dealloc];
+#endif
     delete world;
     delete debugDraw;
 }
