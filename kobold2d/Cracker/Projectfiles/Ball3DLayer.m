@@ -48,13 +48,13 @@
     
 	// Create a light, place it and make it shine in all directions (not directional)
 	CC3Light* lamp = [CC3Light nodeWithName: @"Lamp"];
-	lamp.location = cc3v(-4.0, 1.0, 2.0);
+	lamp.location = cc3v(-4.0, 1.0, 10.0);
 	lamp.isDirectionalOnly = YES;
     lamp.color = ccc3(0xff, 0xff, 0xff);
     lamp.specularColor = kCCC4FWhite;
     lamp.ambientColor = kCCC4FLightGray;
     lamp.diffuseColor = kCCC4FWhite;
-	[_cam addChild:lamp];
+	[self addChild:lamp];
     
     const CGFloat ratio = 60;
     CGSize s = [CCDirector sharedDirector].winSize;
@@ -65,28 +65,29 @@
                                                 boxBound.width/2,  boxBound.height/2, 0);
     
     _box = [CC3BoxNode nodeWithName:@"Box"];
-    [_box populateAsWireBox:bounds];
-
-    
+    [_box populateAsSolidBox:bounds];
+    _box.texture = [CC3Texture textureFromFile:@"wood2.jpg"];
+    _box.specularColor = kCCC4FWhite;
+    _box.diffuseColor = kCCC4FLightGray;
+    _box.ambientColor = kCCC4FDarkGray;
     
     [self addChild:_box];
 
 
-    CC3PlaneNode *imageNode = [CC3PlaneNode nodeWithName:@"Ball"];
+    _ball = [CC3PlaneNode nodeWithName:@"Ball"];
     
-    [imageNode populateAsCenteredRectangleWithSize:CGSizeMake(2*_ballRadius, 2*_ballRadius) 
-                                       withTexture:[CC3Texture textureFromFile:@"Icon.png"] 
-                                     invertTexture:YES];
-    imageNode.material.isOpaque = YES;
-    imageNode.material.sourceBlend = GL_SRC_ALPHA;
-    imageNode.material.destinationBlend = GL_ONE_MINUS_SRC_ALPHA;
-    imageNode.shouldCullBackFaces = NO;
+    [_ball populateAsCenteredRectangleWithSize:CGSizeMake(2*_ballRadius, 2*_ballRadius) 
+                                   withTexture:[CC3Texture textureFromFile:@"ball.png"] 
+                                 invertTexture:YES];
+    _ball.material.isOpaque = YES;
+    _ball.material.sourceBlend = GL_SRC_ALPHA;
+    _ball.material.destinationBlend = GL_ONE_MINUS_SRC_ALPHA;
+    _ball.shouldCullBackFaces = NO;
 
-    [imageNode retainVertexLocations];
+    [_ball retainVertexLocations];
     
-    [_box addChild:imageNode];
-    
-    _ball = imageNode;
+    [_box addChild:_ball];
+
 	
 	// Create OpenGL ES buffers for the vertex arrays to keep things fast and efficient,
 	// and to save memory, release the vertex data in main memory because it is now redundant.
@@ -144,7 +145,7 @@
 - (void)setBallRotation:(CGFloat)ballRotation
 {
     _ball.rotationAxis = cc3v(0, 0, 1);
-    _ball.rotationAngle = ballRotation;
+    //_ball.rotationAngle = ballRotation;
 }
 
 - (CGPoint)getBallLocation

@@ -15,8 +15,9 @@
 - (id)init
 {
     if ((self = [super init])){
-
+        [[CCDirector sharedDirector] enableRetinaDisplay:YES];
         [self addChild:[PlayLayer node]];
+        
         [self scheduleUpdate];
     }
     return self;
@@ -35,4 +36,5 @@
                                                              scene:[MenuScene node]]];
     }
 }
+
 @end

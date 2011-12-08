@@ -46,7 +46,7 @@ const float PTM_RATIO = 128.0f;
         CGFloat r = [ball3DLayer getBallRadius];
         [self CreateBallAtScreenLocation:p withScreenRadius:r];
         
-        CCSprite *bg = [CCSprite spriteWithFile:@"wood.jpg"];
+        CCSprite *bg = [CCSprite spriteWithFile:@"wood2.jpg"];
         [self addChild:bg z:-1];
         bg.position = [CCDirector sharedDirector].screenCenter;
         

@@ -17,8 +17,8 @@ void ContactListener::BeginContact(b2Contact* contact)
 	
 	if (spriteA != NULL && spriteB != NULL)
 	{
-		//spriteA.color = ccMAGENTA;
-		//spriteB.color = ccMAGENTA;
+		spriteA.color = ccMAGENTA;
+		spriteB.color = ccMAGENTA;
 	}
 }
 
